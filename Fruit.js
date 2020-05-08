@@ -22,11 +22,10 @@ class Fruit
     push();
     translate(pos.x, pos.y);
     rotate(angle);
-    rectMode(CENTER);
     fill(255);
     strokeWeight(4);
     stroke("brown");
-    rect(0, 0, this.width, this.height);
+    imageMode(CENTER);
     image(this.image,0,0,this.width,this.height);
     pop();
   }
